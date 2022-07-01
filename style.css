@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Verydarkblue-main: hsl(217, 54%, 11%);
+--Verydarkblue-card:hsl(216, 50%, 16%);
+--Verydarkblue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--font:'Outfit', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+.card{
+    max-width: 400px;
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.img-top{
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+.img-top img{
+    width: 100%;
+    display: block;
+}
+.img-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+.img-overlay img{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-top:hover .img-overlay{
+    display: block;
+}
+
+.title{
+    color: var(--White);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    display: inline-block;
+    margin-top: 20px; ;
+}
+.title:hover{
+    color: var(--Cyan);
+}
+.paragraph{
+        font-size: 18px;
+        color: var(--Softblue);
+        margin-bottom: 20px;
+}
+
+.card__price-date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    border-bottom: 2px solid var(--Verydarkblue-line);
+}
+.price,.date{
+  display: flex;
+  align-items: center;
+  padding: 20px 6;
+}
+.paragraph--price{
+    color: var(--Cyan);
+    font-weight: 600;
+    margin: 0 7px;
+
+
+}
+.paragraph--date{
+    color: var(--Softblue);
+
+}
+.author{
+ display: flex;
+ align-items: center;
+ padding-top: 6px;
+}
+.person__img{
+    border: 2px solid var(--White);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.name{
+    text-decoration: none;
+    color: var(--White);
+}
+.paragraph,.name{
+  margin-top: 25px;
+}
+.name:hover{
+    color: var(--Cyan);
+}
+.attribution{
+ color: var(--White);
+ margin: 0 0 10px 50px;
+}
+.attribution a{
+    color: var(--White);
+
+}
+.attribution a:hover{
+    color: var(--Cyan);
+}
